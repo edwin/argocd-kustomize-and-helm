@@ -5,12 +5,12 @@ Kustomize repository contains jenkins Helm Chart for testing `kustomize` templat
 
 ## How to Test
 ```
-$ cd jenkins
+$ cd kustomize/jenkins
 $ kustomize build overlays/dev --enable-helm --helm-command helm
 ```
 
 ## How to Implement
 ```
-$ cd jenkins
+$ cd kustomize/jenkins
 $ kustomize build overlays/dev --enable-helm --helm-command helm | oc apply -f
 ```
