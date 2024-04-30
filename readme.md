@@ -8,3 +8,9 @@ Kustomize repository contains jenkins Helm Chart for testing `kustomize` templat
 $ cd jenkins
 $ kustomize build overlays/dev --enable-helm --helm-command helm
 ```
+
+## How to Implement
+```
+$ cd jenkins
+$ kustomize build overlays/dev --enable-helm --helm-command helm | oc apply -f
+```
