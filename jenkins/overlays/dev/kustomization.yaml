@@ -1,15 +1,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-resources:
-  - ../../base
-
 helmCharts:
 - name: jenkins
   repo: https://redhat-cop.github.io/helm-charts
   version: "1.0.10"
   releaseName: jenkins
   namespace: my-namespace
-  valuesFile: values.yaml
+  valuesFile: ../../base/values.yaml
   valuesInline:
     route: false  
+  valuesMerge: override
+  additionalValuesFiles:
+  - values.yaml

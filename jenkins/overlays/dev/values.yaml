@@ -1,10 +1,13 @@
 source_secrets:    
   - name: git-auth
     username: idm-sa
-    password: i-dont-know
+    password: i-dont-know-too
   - name: my-token
     type: Opaque
     token: some-token
   - name: nexus-password
+    username: admin
+    password: password
+  - name: mynexus-password
     username: admin
     password: password

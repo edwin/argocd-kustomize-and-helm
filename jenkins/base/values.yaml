@@ -1,0 +1,17 @@
+source_secrets:    
+  - name: git-auth
+    username: idm-sa
+    password: default-password
+  - name: my-token
+    type: Opaque
+    token: default-token
+  - name: nexus-password
+    username: admin
+    password: default-password
+deployment:
+  limits:
+    memory_request: 4Gi
+    memory_limit: 12Gi
+    cpu_request: 1000m
+    cpu_limit: 2
+
