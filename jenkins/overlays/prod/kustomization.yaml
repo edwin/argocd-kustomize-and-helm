@@ -3,3 +3,16 @@ kind: Kustomization
 
 resources:
   - ../../base
+
+helmGlobals:
+  chartHome: ../../../charts
+
+helmCharts:
+- name: jenkins
+  version: "1.0.10"
+  releaseName: jenkins
+  namespace: my-namespace
+  valuesFile: values.yaml
+  includeCRDs: false
+  valuesInline:
+    route: false  
