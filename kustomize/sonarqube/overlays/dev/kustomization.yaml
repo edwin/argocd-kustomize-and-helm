@@ -5,7 +5,7 @@ resources:
   - ../../base
 
 helmGlobals:
-  chartHome: ../../../charts
+  chartHome: ../../../../charts
 
 helmCharts:
 - name: sonarqube
