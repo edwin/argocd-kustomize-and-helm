@@ -14,3 +14,15 @@ $ kustomize build overlays/dev --enable-helm
 $ cd kustomize/jenkins
 $ kustomize build overlays/dev --enable-helm | oc apply -f
 ```
+
+## How to Test for Sonarqube
+```
+$ cd kustomize/sonarqube
+$ kustomize build overlays/dev --enable-helm 
+```
+
+## How to Implement for Sonarqube
+```
+$ cd kustomize/sonarqube
+$ kustomize build overlays/dev --enable-helm | oc apply -f
+```
